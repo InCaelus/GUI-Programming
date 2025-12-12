@@ -24,15 +24,19 @@ public class PlusMinusImageFrame extends JFrame {
 
 		private int width, height;
 
-		public MyPanel() {
+		public MyPanel() { // 이미지의 원본 크기 기억
 			width = img.getWidth(this);
 			height = img.getHeight(this);
 			addKeyListener(new KeyAdapter() {
 				@Override
 				public void keyPressed(KeyEvent e) {
-					if (e.getKeyChar() == '+') {
+					if (e.getKeyChar() == '+') { // 그려질 이미지 크기 확대
 						width = (int) (width * 1.1);
 						height = (int) (height * 1.1);
+						repaint(); // 다시 그리기 지시
+					} else if (e.getKeyChar() == '-') { // 그려질 이미지 크기 축소
+						width = (int) (width * 0.9);
+						height = (int) (height * 0.9);
 						repaint(); // 다시 그리기 지시
 					}
 				}
