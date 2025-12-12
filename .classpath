@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="Chap10"/>
 	<classpathentry excluding="ex11_05/|ex11_05/" kind="src" path="Chap11"/>
 	<classpathentry kind="src" path="Chap12"/>
+	<classpathentry kind="src" path="Chap14"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

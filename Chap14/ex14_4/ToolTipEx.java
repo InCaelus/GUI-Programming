@@ -1,0 +1,44 @@
+package ex14_4;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class ToolTipEx extends JFrame {
+	private Container contentPane;
+
+	public class TooltipEx extends JFrame {
+		private Container contentPane;
+
+		public ToolTipEx() {
+			setTitle("팁 예제");
+			setDefaultCloseoperation(JFrame.EXIT_ON_CLOSE);
+			contentPane = getContentPane();
+			createToolBar();
+			setSize(400, 150);
+			setVisible(true);
+		}
+
+		private void createToolBar() {
+			JToolBar bar = new JToolBar("Kitae Menu");
+			bar.setBackground (Color. LIGHT_GRAY);
+			JButton newBtn = new JButton ("New");
+			newBtn.setToolTipText("파일을 생성합니다.");
+			bar.add(newBtn);
+			
+			JButton openBtn = new JButton(new ImageIcon("C:\\Users\\SAMSUNG Galaxy\\Desktop\\Gui_Programming\\Chap14\\images\\open.jpg"));
+			openBtn.setToolTipText("파일을 엽니다");
+			bar.add(openBtn);
+			bar.addSeparator();
+			
+			JButton saveBtn = new JButton(new ImageICon(""));
+			saveBtn.setToolTipText("파일을 저장합니다");
+			bar.add(saveBtn);
+			
+			bar.add(new JLabel("search"));
+			
+			JTextField tf = new JTextField("text field");
+			tf.
+		}
+
+	}
+}
