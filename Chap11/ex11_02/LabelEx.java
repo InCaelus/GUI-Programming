@@ -12,19 +12,13 @@ public class LabelEx extends JFrame {
 		c.setLayout(new FlowLayout());
 
 		JLabel textLabel = new JLabel("사랑합니다");
-<<<<<<< HEAD
-		ImageIcon beauty = new ImageIcon("C:\\Users\\leein\\OneDrive\\바탕 화면\\GUI_Programming\\Chap11\\images\\beauty.jpg");
-		JLabel imageLabel = new JLabel(beauty);
 
-		ImageIcon normallcon = new ImageIcon("C:\\Users\\leein\\OneDrive\\바탕 화면\\GUI_Programming\\Chap11\\images\\normalIcon.gif");
-=======
 		ImageIcon beauty = new ImageIcon(
-				"C:\\Users\\SAMSUNG Galaxy\\Desktop\\Gui_Programming\\Chap11\\images\\beauty.jpg");
+				"C:\\Users\\leein\\OneDrive\\바탕 화면\\GUI_Programming\\Chap11\\images\\beauty.jpg");
 		JLabel imageLabel = new JLabel(beauty);
 
 		ImageIcon normallcon = new ImageIcon(
-				"C:\\Users\\SAMSUNG Galaxy\\Desktop\\Gui_Programming\\Chap11\\images\\normalIcon.gif");
->>>>>>> df00c5799c6e79857cdd8a66656014a24f16d1d2
+				"C:\\Users\\leein\\OneDrive\\바탕 화면\\GUI_Programming\\Chap11\\images\\normalIcon.gif");
 		JLabel label = new JLabel("보고 싶으면 전화하세요", normallcon, SwingConstants.CENTER);
 		c.add(textLabel);
 		c.add(imageLabel);
